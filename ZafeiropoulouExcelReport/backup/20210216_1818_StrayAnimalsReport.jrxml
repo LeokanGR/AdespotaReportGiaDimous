@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StrayAnimalsReport" pageWidth="2900" pageHeight="595" orientation="Landscape" columnWidth="2900" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isIgnorePagination="true" uuid="fa5ec804-e589-43cf-ae34-2a5e213ee28d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="209"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="791"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 8_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 8_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 9_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 9_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 9_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 10_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 10_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 10_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 11_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 11_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 11_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="1_Perisilogi_DS" uuid="c0414093-0bad-47e8-98b2-1cbff5d27a85">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<parameter name="dimosID_DS" class="java.lang.Integer"/>
+		<parameter name="from_date_DS" class="java.util.Date"/>
+		<parameter name="to_date_DS" class="java.util.Date"/>
+		<parameter name="Microchip_Perisilogi_DS" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT DATE_FORMAT(p.PERISYLLOGHDATE, '%d/%m/%Y') as `PerisilogiDate`, p.PERISYLLOGHAPO, fs.`NAME`
+FROM strayanimals.perisyllogh as p
+inner join strayanimals.kinisi_coll as k on p.KINHSH_ID = k.ID
+left join strayanimals.t013_municipality as m on p.DIMOS_ID = m.ID
+left join strayanimals.filozwiko_swmateio as fs on fs.ID = p.SWMATEIO_ID
+where k.MICROCHIP like $P{Microchip_Perisilogi_DS}
+AND k.DIMOS_ID = $P{dimosID_DS}
+AND p.PERISYLLOGHDATE BETWEEN $P{from_date_DS} AND $P{to_date_DS}]]>
+		</queryString>
+		<field name="PerisilogiDate" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="PerisilogiDate"/>
+		</field>
+		<field name="PERISYLLOGHAPO" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="PERISYLLOGHAPO"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="perisyllogh"/>
+		</field>
+		<field name="NAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="NAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filozwiko_swmateio"/>
+		</field>
+		<variable name="1_Perisilogi_DS_Var" class="java.lang.Integer" calculation="Sum"/>
+	</subDataset>
+	<subDataset name="2_SimansiKatagrafi_DS" uuid="f683822b-7648-4908-b44b-f1d2864703bd">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<parameter name="2_SimansiKatagrafi_microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="2_SimansiKatagrafi_DIMOS_ID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="2_SimansiKatagrafi_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="2_SimansiKatagrafi_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT DATE_FORMAT(k.KATAXWRHSHDATE, '%d/%m/%Y') as `Simansi_date`
+FROM strayanimals.kinisi_coll as k
+where k.DRASI_ID = 2
+and k.MICROCHIP like $P{2_SimansiKatagrafi_microchip_DS_PARAM}
+and k.DIMOS_ID = $P{2_SimansiKatagrafi_DIMOS_ID_DS_PARAM}
+AND k.KATAXWRHSHDATE BETWEEN $P{2_SimansiKatagrafi_fromDate_DS_PARAM} AND $P{2_SimansiKatagrafi_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Simansi_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Simansi_date"/>
+		</field>
+	</subDataset>
+	<subDataset name="4_AntilisikosEmvoliasmos_DS" uuid="8f97e91f-2d45-48b1-94ae-2d4614eac59b">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<parameter name="4_Antilisikos_emvoliasmos_MICROCHIP_DS_PARAM" class="java.lang.String"/>
+		<parameter name="4_Antilisikos_emvoliasmos_DIMOS_ID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="4_Antilisikos_emvoliasmos_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="4_Antilisikos_emvoliasmos_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT DATE_FORMAT(k.KATAXWRHSHDATE, '%d/%m/%Y') as `Antilisikos_date`
+FROM strayanimals.kinisi_coll as k
+where k.DRASI_ID = 4
+and k.MICROCHIP like $P{4_Antilisikos_emvoliasmos_MICROCHIP_DS_PARAM}
+and k.DIMOS_ID = $P{4_Antilisikos_emvoliasmos_DIMOS_ID_DS_PARAM}
+and k.KATAXWRHSHDATE BETWEEN $P{4_Antilisikos_emvoliasmos_fromDate_DS_PARAM} AND $P{4_Antilisikos_emvoliasmos_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Antilisikos_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Antilisikos_date"/>
+		</field>
+	</subDataset>
+	<subDataset name="5_Steirosi_DS" uuid="89071a53-6cb1-447f-b818-6d1b1ae70dfa">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<parameter name="5_Steirosi_Microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="5_Steirosi_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="5_Steirosi_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="5_Steirosi_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT DATE_FORMAT(k.KATAXWRHSHDATE, '%d/%m/%Y') as `Steirosi_date`
+FROM strayanimals.kinisi_coll as k
+where k.DRASI_ID = 5
+and k.MICROCHIP like $P{5_Steirosi_Microchip_DS_PARAM}
+and k.DIMOS_ID = $P{5_Steirosi_dimosID_DS_PARAM}
+AND k.KATAXWRHSHDATE BETWEEN $P{5_Steirosi_fromDate_DS_PARAM} AND $P{5_Steirosi_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Steirosi_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Steirosi_date"/>
+		</field>
+	</subDataset>
+	<subDataset name="12_Leismaniasi" uuid="2401376e-2b0e-4181-bc63-c3b0c8f0ba61">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<parameter name="12_Leismaniasi_microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="12_Leismaniasi_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="12_Leismaniasi_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="12_Leismaniasi_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT DATE_FORMAT(k.KATAXWRHSHDATE, '%d/%m/%Y') as `Eksetasi_leismaniasis_date`
+FROM strayanimals.kinisi_coll as k
+where k.DRASI_ID = 12
+and k.MICROCHIP like $P{12_Leismaniasi_microchip_DS_PARAM}
+and k.DIMOS_ID = $P{12_Leismaniasi_dimosID_DS_PARAM}
+AND k.KATAXWRHSHDATE BETWEEN $P{12_Leismaniasi_fromDate_DS_PARAM} AND $P{12_Leismaniasi_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Eksetasi_leismaniasis_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Eksetasi_leismaniasis_date"/>
+		</field>
+	</subDataset>
+	<subDataset name="6_Anarrosi" uuid="1471621c-1d47-4acd-aa26-0c424741f576">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<parameter name="6_Anarrosi_Microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="6_Anarrosi_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="6_Anarrosi_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="6_Anarrosi_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT DATE_FORMAT(a.ANARRWSHSTARTDATE, '%d/%m/%Y') as `Enarxi_date`, DATE_FORMAT(a.ANARRWSHENDDATE, '%d/%m/%Y') as `End_date`, a.ANNARWSHSE, kat.`NAME`, kat_type.`NAME` AS `Typos_Katafig`, dim_ktin.TAXID as `AFM_DIM_KTIN`, dim_ktin.`NAME` AS `DHM_KTIN_NAME`, idi_ktin.TAXID as `AFM_IDI_KTIN`, idi_ktin.`NAME` AS `IDI_KTIN_NAME`, h.TAXID AS `AFM_HOSTEL`, h.`NAME` as `HOSTEL_NAME`
+FROM strayanimals.kinisi_coll as k
+left join strayanimals.anarrwsh as a on a.KINHSH_ID = k.ID
+left join strayanimals.katafygio as kat on kat.ID = a.KATAFYGIO_ID
+LEFT JOIN strayanimals.katafygio_type as kat_type on kat.TYPE_ID = kat_type.ID
+LEFT JOIN strayanimals.dhmotiko_kthniatreio as dim_ktin on dim_ktin.ID = a.DHMKTHNIATREIO_ID
+LEFT JOIN strayanimals.idiwtiko_kthniatreio AS idi_ktin on idi_ktin.ID = a.IDKTHNIATREIO_ID
+LEFT JOIN strayanimals.hostel as h on h.ID = a.HOSTEL_ID
+where k.DRASI_ID = 6
+and k.MICROCHIP like $P{6_Anarrosi_Microchip_DS_PARAM}
+and k.DIMOS_ID = $P{6_Anarrosi_dimosID_DS_PARAM}
+AND k.KATAXWRHSHDATE BETWEEN $P{6_Anarrosi_fromDate_DS_PARAM} AND $P{6_Anarrosi_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Enarxi_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Enarxi_date"/>
+		</field>
+		<field name="End_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="End_date"/>
+		</field>
+		<field name="ANNARWSHSE" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ANNARWSHSE"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="anarrwsh"/>
+		</field>
+		<field name="NAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="NAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="katafygio"/>
+		</field>
+		<field name="Typos_Katafig" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Typos_Katafig"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="katafygio_type"/>
+		</field>
+		<field name="AFM_DIM_KTIN" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="AFM_DIM_KTIN"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="dhmotiko_kthniatreio"/>
+		</field>
+		<field name="DHM_KTIN_NAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="DHM_KTIN_NAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="dhmotiko_kthniatreio"/>
+		</field>
+		<field name="AFM_IDI_KTIN" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="AFM_IDI_KTIN"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="idiwtiko_kthniatreio"/>
+		</field>
+		<field name="IDI_KTIN_NAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="IDI_KTIN_NAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="idiwtiko_kthniatreio"/>
+		</field>
+		<field name="AFM_HOSTEL" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="AFM_HOSTEL"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="hostel"/>
+		</field>
+		<field name="HOSTEL_NAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="HOSTEL_NAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="hostel"/>
+		</field>
+	</subDataset>
+	<subDataset name="7_Fylaksi" uuid="76dfea2c-19d6-41c0-acd3-8eb8654b0067">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<parameter name="7_Fylaksi_microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="7_Fylaksi_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="7_Fylaksi_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="7_Fylaksi_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString>
+			<![CDATA[SELECT DATE_FORMAT(f.STARTDATE, '%d/%m/%Y') AS FROM_DATE, DATE_FORMAT(f.ENDDATE, '%d/%m/%Y') AS TO_DATE, f.APOFASHEISNUM, DATE_FORMAT(f.APOFASHEISDATE, '%d/%m/%Y') AS APOFASI_DATE, f.FYLAXHSE, kat_type.`NAME` as `Eidos`, kat.`NAME` AS KATAF_NAME, kat.AFM AS KATAF_AFM
+FROM strayanimals.kinisi_coll as k
+left join strayanimals.fylaxh as f on f.KINHSH_ID = k.ID
+left join strayanimals.katafygio as kat on f.KATAFYGIO_ID = kat.ID
+LEFT JOIN strayanimals.katafygio_type as kat_type ON kat.TYPE_ID = kat_type.ID 
+where k.DRASI_ID = 7
+and k.MICROCHIP like $P{7_Fylaksi_microchip_DS_PARAM}
+and k.DIMOS_ID = $P{7_Fylaksi_dimosID_DS_PARAM}
+AND k.KATAXWRHSHDATE BETWEEN $P{7_Fylaksi_fromDate_DS_PARAM} AND $P{7_Fylaksi_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="FROM_DATE" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="FROM_DATE"/>
+		</field>
+		<field name="TO_DATE" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="TO_DATE"/>
+		</field>
+		<field name="APOFASHEISNUM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="APOFASHEISNUM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="fylaxh"/>
+		</field>
+		<field name="APOFASI_DATE" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="APOFASI_DATE"/>
+		</field>
+		<field name="FYLAXHSE" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="FYLAXHSE"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="fylaxh"/>
+		</field>
+		<field name="Eidos" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Eidos"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="katafygio_type"/>
+		</field>
+		<field name="KATAF_NAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="KATAF_NAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="katafygio"/>
+		</field>
+		<field name="KATAF_AFM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="KATAF_AFM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="katafygio"/>
+		</field>
+	</subDataset>
+	<subDataset name="9_Epanatopothetisi" uuid="e16bf114-d56e-48c5-9970-75dcc6efae76">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<parameter name="9_Epanatopothetisi_microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="9_Epanatopothetisi_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="9_Epanatopothetisi_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="9_Epanatopothetisi_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString>
+			<![CDATA[SELECT DATE_FORMAT(e.RETURNDATE, '%d/%m/%Y') as `Epanatopothetisi_date`, e.APOFASH3MELOUSNUM, DATE_FORMAT(e.APOFASH3MELOUSDATE, '%d/%m/%Y') as Apofasi3melousDate, e.ADA3MELOUS, e.APOFASH5MELOUSNUM, DATE_FORMAT(e.APOFASH5MELOUSDATE, '%d/%m/%Y') as Apofasi5melousDate, e.ADA5MELOUS
+FROM strayanimals.kinisi_coll as k
+left join strayanimals.epanatopothethsh as e on e.KINHSH_ID = k.ID
+where k.DRASI_ID = 9
+and k.MICROCHIP like $P{9_Epanatopothetisi_microchip_DS_PARAM}
+and k.DIMOS_ID = $P{9_Epanatopothetisi_dimosID_DS_PARAM}
+AND e.RETURNDATE BETWEEN $P{9_Epanatopothetisi_fromDate_DS_PARAM} AND $P{9_Epanatopothetisi_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Epanatopothetisi_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Epanatopothetisi_date"/>
+		</field>
+		<field name="APOFASH3MELOUSNUM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="APOFASH3MELOUSNUM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
+		</field>
+		<field name="Apofasi3melousDate" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Apofasi3melousDate"/>
+		</field>
+		<field name="ADA3MELOUS" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ADA3MELOUS"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
+		</field>
+		<field name="APOFASH5MELOUSNUM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="APOFASH5MELOUSNUM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
+		</field>
+		<field name="Apofasi5melousDate" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Apofasi5melousDate"/>
+		</field>
+		<field name="ADA5MELOUS" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ADA5MELOUS"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
+		</field>
+	</subDataset>
+	<subDataset name="11_Thanatos" uuid="29cfae09-4327-4770-80ac-d9659d0e54db">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<parameter name="11_Thanatos_microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="11_Thanatos_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="11_Thanatos_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="11_Thanatos_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString>
+			<![CDATA[SELECT DATE_FORMAT(th.THANATOSDATE, '%d/%m/%Y') as `Thanatos_date`
+FROM strayanimals.kinisi_coll as k
+left join strayanimals.thanatos as th on th.KINHSH_ID = k.ID
+where k.DRASI_ID = 11
+and k.MICROCHIP like $P{11_Thanatos_microchip_DS_PARAM}
+and k.DIMOS_ID = $P{11_Thanatos_dimosID_DS_PARAM}
+AND th.THANATOSDATE BETWEEN $P{11_Thanatos_fromDate_DS_PARAM} AND $P{11_Thanatos_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Thanatos_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Thanatos_date"/>
+		</field>
+	</subDataset>
+	<subDataset name="10_Efthanasia" uuid="83630e70-1af0-4a24-ad01-ec4173c5314d">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<parameter name="10_Efthanasia_microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="10_Efthanasia_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="10_Efthanasia_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="10_Efthanasia_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString>
+			<![CDATA[SELECT DATE_FORMAT(e.EYTHANASIADATE, '%d/%m/%Y') as `Efthanasia_date`, e.APOFASH3MELOUSNUM, DATE_FORMAT(e.APOFASH3MELOUSDATE, '%d/%m/%Y') as Apofasi3melousDate, e.ADA3MELOUS, e.APOFASH5MELOUSNUM, DATE_FORMAT(e.APOFASH5MELOUSDATE, '%d/%m/%Y') as Apofasi5melousDate, e.ADA5MELOUS
+FROM strayanimals.kinisi_coll as k
+left join strayanimals.eythanasia as e on e.KINHSH_ID = k.ID
+where k.DRASI_ID = 10
+and k.MICROCHIP like $P{10_Efthanasia_microchip_DS_PARAM}
+and k.DIMOS_ID =$P{10_Efthanasia_dimosID_DS_PARAM}
+AND e.EYTHANASIADATE BETWEEN $P{10_Efthanasia_fromDate_DS_PARAM} AND $P{10_Efthanasia_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Efthanasia_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Efthanasia_date"/>
+		</field>
+		<field name="APOFASH3MELOUSNUM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="APOFASH3MELOUSNUM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="eythanasia"/>
+		</field>
+		<field name="Apofasi3melousDate" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Apofasi3melousDate"/>
+		</field>
+		<field name="ADA3MELOUS" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ADA3MELOUS"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="eythanasia"/>
+		</field>
+		<field name="APOFASH5MELOUSNUM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="APOFASH5MELOUSNUM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="eythanasia"/>
+		</field>
+		<field name="Apofasi5melousDate" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Apofasi5melousDate"/>
+		</field>
+		<field name="ADA5MELOUS" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ADA5MELOUS"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="eythanasia"/>
+		</field>
+	</subDataset>
+	<subDataset name="8_Yiothesia" uuid="5bc8bb5f-a630-4a48-b52e-0e1a7c3c2a1b">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<parameter name="8_Yiothesia_microchip_DS_PARAM" class="java.lang.String"/>
+		<parameter name="8_Yiothesia_dimosID_DS_PARAM" class="java.lang.Integer"/>
+		<parameter name="8_Yiothesia_fromDate_DS_PARAM" class="java.util.Date"/>
+		<parameter name="8_Yiothesia_toDate_DS_PARAM" class="java.util.Date"/>
+		<queryString>
+			<![CDATA[SELECT DATE_FORMAT(i.IOTHESIADATE, '%d/%m/%Y') as `Yiothesia_date`, i.IOTHESIANUM, i.NEWOWNERAFM, own.FIRSTNAME, own.SURNAME
+FROM strayanimals.kinisi_coll as k
+left join strayanimals.iothesia_coll as i on i.KINHSH_ID = k.ID
+left join zoaSintrofias.T003_OWNER as own on CAST(own.TAX_ID AS BINARY) = CAST(i.NEWOWNERAFM AS BINARY)
+where k.DRASI_ID = 8
+and k.MICROCHIP like $P{8_Yiothesia_microchip_DS_PARAM}
+and k.DIMOS_ID = $P{8_Yiothesia_dimosID_DS_PARAM}
+and i.IOTHESIADATE BETWEEN $P{8_Yiothesia_fromDate_DS_PARAM} AND $P{8_Yiothesia_toDate_DS_PARAM}]]>
+		</queryString>
+		<field name="Yiothesia_date" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Yiothesia_date"/>
+		</field>
+		<field name="IOTHESIANUM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="IOTHESIANUM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="iothesia_coll"/>
+		</field>
+		<field name="NEWOWNERAFM" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="NEWOWNERAFM"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="iothesia_coll"/>
+		</field>
+		<field name="FIRSTNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="FIRSTNAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="T003_OWNER"/>
+		</field>
+		<field name="SURNAME" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="SURNAME"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="T003_OWNER"/>
+		</field>
+	</subDataset>
+	<parameter name="dimosID" class="java.lang.Integer"/>
+	<parameter name="from_date" class="java.util.Date"/>
+	<parameter name="to_date" class="java.util.Date"/>
+	<queryString>
+		<![CDATA[SELECT DISTINCT k.MICROCHIP AS Microchip, kind.DESCR AS KIND, gender.DESCR  AS GENDER, DATE_FORMAT(a.DATEOFBIRTH, '%d/%m/%Y') AS DateOfBirth, dimos.DESCR AS DIMOS
+FROM strayanimals.kinisi_coll AS k
+INNER JOIN zoaSintrofias.T001_ANIMAL AS a ON a.MICROCHIPCODE = k.MICROCHIP
+INNER JOIN zoaSintrofias.T011_KIND as kind ON kind.ID = a.T011_ID
+INNER JOIN zoaSintrofias.T008_GENDER AS gender ON gender.ID = a.T008_ID
+INNER JOIN strayanimals.t013_municipality as dimos ON dimos.ID = k.DIMOS_ID
+WHERE k.dimos_id = $P{dimosID}
+AND k.kataxwrhshdate BETWEEN $P{from_date} AND  $P{to_date}
+ORDER BY 2, 3, 1]]>
+	</queryString>
+	<field name="Microchip" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Microchip"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="kinisi_coll"/>
+	</field>
+	<field name="KIND" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="KIND"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="T011_KIND"/>
+	</field>
+	<field name="GENDER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="GENDER"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="T008_GENDER"/>
+	</field>
+	<field name="DateOfBirth" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DateOfBirth"/>
+	</field>
+	<field name="DIMOS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DIMOS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="t013_municipality"/>
+	</field>
+	<title>
+		<band height="120">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="30" width="1600" height="60" uuid="795b87ad-9cca-4f50-ae35-7e38029a8838">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ΚΑΤΑΣΤΑΣΗ ΑΔΕΣΠΟΤΩΝ ΖΩΩΝ ΣΥΝΤΡΟΦΙΑΣ ΔΗΜΟΥ " + $F{DIMOS} + ", ΑΠΟ " +DATEFORMAT($P{from_date},"d/MM/YYYY")  + " ΕΩΣ ΚΑΙ " + DATEFORMAT($P{to_date},"d/MM/YYYY")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="200" height="30" uuid="e9fa75fb-6648-49c6-b152-30ae86026803">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[ΥΠΟΥΡΓΕΙΟ ΑΓΡΟΤΙΚΗΣ ΑΝΑΠΤΥΞΗΣ ΚΑΙ ΤΡΟΦΙΜΩΝ]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="90" width="300" height="30" uuid="254bf659-af3c-4770-a2f0-e13d550d1ef1">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ημ/νία εξαγωγής: " + NOW( )]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="60">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="100" height="60" uuid="2249866a-2401-442c-a690-85f216507e4e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="414022fb-c636-4a6f-ae8f-bc86b6b853ad"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Microchip]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="100" y="0" width="100" height="60" uuid="dd9ba106-d094-4194-9393-b91bfa8e20ac">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="32256067-e519-4d89-b44e-7ffb7173a15e"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Είδος]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="200" y="0" width="100" height="60" uuid="761addf1-9d72-4422-842b-9dc572439ff9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20c0bbd6-3ed8-4d55-b891-b6943b53ee7d"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Φύλλο]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="300" y="0" width="100" height="60" uuid="5b87579e-7345-4c4d-989f-df2f69523cdc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="50c8dacb-0711-469d-8820-f2a6242077e6"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ημερομηνία γέννησης]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="400" y="30" width="100" height="30" uuid="353849e6-9235-4e6b-b0f9-8f3490994866">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ημ/νία περισυλλογής]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="500" y="30" width="200" height="30" uuid="5409ab99-2bde-4e8f-a965-feae1aa8afa0">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Η περισυλλογή έγινε από]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="700" y="0" width="100" height="60" uuid="12d3ce9f-a1fc-42a9-a703-df68a41da671">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Σήμανση]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="800" y="0" width="100" height="60" uuid="4d75c9d5-d276-46b1-842f-6e66602dcad3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Αντιλυσικός εμβολιασμός]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="900" y="0" width="100" height="60" uuid="968094ea-1577-4b9c-91e5-df501ce44327">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Στείρωση]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="1000" y="0" width="100" height="60" uuid="ad656850-afe8-410d-ab30-8eb2509076e8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Εξέταση Λεϊσμανίασης]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="2100" y="0" width="100" height="60" uuid="0ddce343-7425-4b57-a2ff-c61b1afc1d9b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Επανατοποθέτηση στο περιβάλλον]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="2200" y="0" width="100" height="60" uuid="ae2e684b-8a37-423f-97db-0d2140b65b1e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Θάνατος]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="2300" y="0" width="100" height="60" uuid="0c79a757-39c6-4295-9200-976af9505992">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ευθανασία]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="1100" y="0" width="500" height="60" uuid="a7ef1751-3797-4a73-8504-6779096300d6"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="500" height="30" uuid="eba20aa3-876b-47ca-b957-6990a68f0c9e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Ανάρρωση]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="30" width="100" height="30" uuid="9c4fec15-b9e7-4272-a402-2bdd9effc355">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Από]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="100" y="30" width="100" height="30" uuid="e854019d-e4a2-4607-ac1c-7ad500d7e551">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Έως]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="200" y="30" width="300" height="30" uuid="c70be0d4-ec7c-497c-b37b-7b8d8f3de761">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Τόπος ανάρρωσης]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement x="1600" y="0" width="500" height="60" uuid="153b8ef9-fc3a-4497-a585-7c89c7291f1a"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="0" width="500" height="30" uuid="c1fc066e-5bc0-43df-802b-46c7fbda5141">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Φύλαξη]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="30" width="100" height="30" uuid="1a5df9f0-b1c2-4e21-ab95-c53ab07bec2a">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Από]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="100" y="30" width="100" height="30" uuid="6c8d607c-6fad-4b5f-9e49-39b0bd87e82b">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Έως]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="200" y="30" width="300" height="30" uuid="0c6ca089-8073-4635-ac72-062d2c122b94">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<box padding="2">
+						<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="DejaVu Sans" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Τόπος φύλαξης]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement positionType="Float" x="2400" y="30" width="100" height="30" uuid="8f9be265-dfe8-4ef9-bb31-ae871b2e709e">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ημ/νία υιοθεσίας]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="2400" y="0" width="500" height="30" uuid="7193b28d-c7aa-4818-9f10-033b7fbc4b95">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Υιοθεσία]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="2500" y="30" width="200" height="30" uuid="7dc3967c-321d-499f-b694-600895cd7f46">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Επώνυμο]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="2700" y="30" width="100" height="30" uuid="5ee8e222-971e-41bb-bbbb-103d3a614f7c">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Όνομα]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="2800" y="30" width="100" height="30" uuid="f644de95-55ff-4b3b-aa0f-2d708ddc44fa">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Αριθμός πρωτ. δήλ. υιοθεσίας]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="400" y="0" width="300" height="30" uuid="b555ee51-0f8c-4d4c-a5b9-320cfb3c9637">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Περισυλλογή]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Prevent">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="e62f7501-9d95-44c0-bb6d-e22914388286">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="414022fb-c636-4a6f-ae8f-bc86b6b853ad"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Microchip}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="100" y="0" width="100" height="30" uuid="80367c41-fe6f-420e-a3db-88cdbeeb5ac3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="32256067-e519-4d89-b44e-7ffb7173a15e"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KIND}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="200" y="0" width="100" height="30" uuid="ed4f8dc5-16c1-4394-8bdf-50d38bc8d6cd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20c0bbd6-3ed8-4d55-b891-b6943b53ee7d"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GENDER}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="300" y="0" width="100" height="30" uuid="9f475e60-55a0-474d-bff3-45849a334c5e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="50c8dacb-0711-469d-8820-f2a6242077e6"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DateOfBirth}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement positionType="Float" x="400" y="0" width="300" height="30" uuid="10c4b860-ecf0-4e9b-816d-3b802812fa2e">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="1_Perisilogi_DS" uuid="67c31c27-28ba-4f4b-81f3-e629aa132332">
+						<datasetParameter name="Microchip_Perisilogi_DS">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="dimosID_DS">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="from_date_DS">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="to_date_DS">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="056ed1a0-3543-4fa3-9cad-9badfc459c1b">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="3f6cb03e-3bb9-4d4b-8f14-d9643b63effc"/>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{PerisilogiDate}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="200" uuid="0db6e130-3e6a-424d-815c-ab45f46653f1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="200" height="30" uuid="b6b1b1d4-ce58-436c-8e5b-30de21f0bc06"/>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[IF($F{NAME} == null, $F{PERISYLLOGHAPO}, $F{PERISYLLOGHAPO} + " " + $F{NAME})]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="300" height="30" uuid="94fe1f3f-e781-487b-a533-d31ec2d31666"/>
+							<box padding="0">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="700" y="0" width="100" height="30" uuid="4e96fd53-eae6-4463-b325-001cd50947d5">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="2_SimansiKatagrafi_DS" uuid="79f04ed6-502d-4ff8-9658-30441b0a7754">
+						<datasetParameter name="2_SimansiKatagrafi_DIMOS_ID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="2_SimansiKatagrafi_microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="2_SimansiKatagrafi_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="2_SimansiKatagrafi_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="36d6507e-3ca5-43e2-8c2a-622507995868">
+						<jr:detailCell style="Table 2_TD" height="30">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="40e86c52-7714-43bd-8f1c-319dbf60d8ed"/>
+								<box padding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Simansi_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="292ca895-4bac-4e82-8aa8-c3436edf7939"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="800" y="0" width="100" height="30" uuid="8ff419da-1fd6-41e2-a8af-a51babce0ccb">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 3_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 3_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 3_TD"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="4_AntilisikosEmvoliasmos_DS" uuid="4b9d929f-ab2f-4a33-af28-c015e3e0eedc">
+						<datasetParameter name="4_Antilisikos_emvoliasmos_DIMOS_ID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="4_Antilisikos_emvoliasmos_MICROCHIP_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{DIMOS}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="4_Antilisikos_emvoliasmos_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="4_Antilisikos_emvoliasmos_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="1d7b6ef2-d515-4bf5-8c19-a4beb8a777bb">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table 3_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="16bd345a-fb20-43e6-b0bc-8a68ba832ed7">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box padding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Antilisikos_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="1f3cb139-dbd7-4c09-9c4b-d90126c0e8fd"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="900" y="0" width="100" height="30" uuid="a82ef7d6-8484-47ba-9124-3f2c74c78936">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 4_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 4_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 4_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="5_Steirosi_DS" uuid="d2852f78-ec3c-424b-8ebc-c6e00f952b9a">
+						<datasetParameter name="5_Steirosi_Microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="5_Steirosi_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="5_Steirosi_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="5_Steirosi_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="75b10ec7-aca2-4ad6-ac10-ea392734cbf5">
+						<jr:detailCell style="Table 4_TD" height="30">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="715408f5-20d7-40ae-9427-3d49db62de3d"/>
+								<box padding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Steirosi_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="ee944644-5a02-4d02-97be-ba3e5591b8fd"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="1000" y="0" width="100" height="30" uuid="2ab2b7e4-6c7c-4d1c-9a67-e59a20806e2a">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 5_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 5_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 5_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="12_Leismaniasi" uuid="bce9b919-151f-436d-8082-4ad428ef1d8c">
+						<datasetParameter name="12_Leismaniasi_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="12_Leismaniasi_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="12_Leismaniasi_microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="12_Leismaniasi_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="05f80427-1d59-4179-bd3a-02b359304ed9">
+						<jr:detailCell style="Table 5_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="296568d2-b0b0-4bd1-a4f3-b16a3897a638"/>
+								<box padding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Eksetasi_leismaniasis_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="2d097c2e-f940-4cc6-a506-4f7d1db34269"/>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement x="1100" y="0" width="500" height="30" uuid="8c1ebd92-2226-4e4a-998b-0bacd1b5b7ef">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 6_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 6_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 6_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="6_Anarrosi" uuid="58a44382-854d-4266-bfdf-d05dfadcf235">
+						<datasetParameter name="6_Anarrosi_Microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="6_Anarrosi_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="6_Anarrosi_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="6_Anarrosi_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="79ba8e02-09da-4dd4-9895-d94d2beabd59">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table 6_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="fd4c0a40-7b1f-4446-8482-24ecad4d449c"/>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Enarxi_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="b7220ac0-b529-4534-9361-b45230ee8c23">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:detailCell style="Table 6_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="7e9a830a-f05d-4d3c-ab4f-daf3bb535fdf"/>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{End_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="300" uuid="48c0a8c0-4892-4ca8-bee6-d04f5144b416">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:detailCell style="Table 6_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="300" height="30" uuid="2a212041-67c4-4465-96ce-a11000efe016">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ANNARWSHSE} + " " +IF($F{NAME} == null, "", $F{NAME} + " ") + IF($F{Typos_Katafig} == null, "", $F{Typos_Katafig} + " ") + IF($F{AFM_DIM_KTIN} == null , "", "ΑΦΜ: " + $F{AFM_DIM_KTIN} + " ") + IF($F{DHM_KTIN_NAME} == null, "", $F{DHM_KTIN_NAME} + " ") + IF($F{AFM_IDI_KTIN} == null, "", "ΑΦΜ: " + $F{AFM_IDI_KTIN} + " ") + IF($F{IDI_KTIN_NAME} == null, "", $F{IDI_KTIN_NAME} + " ") + IF($F{AFM_HOSTEL} == null, "", "ΑΦΜ: " + $F{AFM_HOSTEL} + " ") + IF($F{HOSTEL_NAME} == null, "", $F{HOSTEL_NAME})]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="b870cb96-24c9-4fe4-a3b3-6e1b1f89e631">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							</reportElement>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+						<staticText>
+							<reportElement positionType="Float" x="100" y="0" width="100" height="30" uuid="7cee825b-19a9-42bc-9549-180320b32581">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								<property name="com.jaspersoft.studio.unit.y" value="px"/>
+								<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							</reportElement>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+						<staticText>
+							<reportElement positionType="Float" x="200" y="0" width="300" height="30" uuid="1518cf4f-2086-42b5-a86d-cf4f70e16892">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								<property name="com.jaspersoft.studio.unit.y" value="px"/>
+								<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							</reportElement>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="1600" y="0" width="500" height="30" uuid="a9570e03-c30e-43e0-af86-3b9a1fc1c6c1">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 7_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 7_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 7_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="7_Fylaksi" uuid="c28b2d58-f931-4f70-8e04-5a7abee8590b">
+						<datasetParameter name="7_Fylaksi_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="7_Fylaksi_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="7_Fylaksi_microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="7_Fylaksi_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="f3cf303a-245b-40db-ae74-85985a182793">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table 7_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="ec6298cb-6a59-40a3-8c9a-99aa17a0eecc">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{FROM_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="1ce06231-6771-405d-8971-8fd7d72ca879">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:detailCell style="Table 7_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="8b5df44d-c558-4d15-801a-02aa6e16b1e4">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TO_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="300" uuid="cc374d84-f66a-4184-9c05-a9782b2d3553">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:detailCell style="Table 7_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="300" height="30" uuid="f5f5483c-f103-417e-8081-f58ddade8340">
+									<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+								</reportElement>
+								<box padding="2">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="2.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[IF($F{Eidos} == null, "", $F{Eidos}) +"" + IF($F{FYLAXHSE} == null, "", $F{FYLAXHSE}) + "" + IF($F{KATAF_NAME} == null, "", $F{KATAF_NAME})]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="500" height="30" uuid="c9432d13-517e-473b-bdea-1bb20d3b2e38"/>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="2100" y="0" width="100" height="30" uuid="657fc3f8-ae4b-4f98-b0e7-e253d32350e2">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 8_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 8_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 8_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="9_Epanatopothetisi" uuid="8fc0cc11-c199-4217-8d6f-8854f7652591">
+						<datasetParameter name="9_Epanatopothetisi_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="9_Epanatopothetisi_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="9_Epanatopothetisi_microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="9_Epanatopothetisi_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="20398bf8-e53b-466c-828c-f6201ca003e4">
+						<jr:detailCell style="Table 8_TD" height="30">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="fa9fa578-030a-4138-81aa-6a82b6c53cd3"/>
+								<box padding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Epanatopothetisi_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="cedd59ff-a701-40fa-9993-1d5d0f3b7cad"/>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="2200" y="0" width="100" height="30" uuid="978eb83d-1a66-4512-bd7d-0cf97448f395">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 9_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 9_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 9_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="11_Thanatos" uuid="df0be07e-f84f-4f04-8ee4-33808fa42122">
+						<datasetParameter name="11_Thanatos_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="17823324-95a3-420f-a6c5-bad461dfd308">
+						<jr:detailCell style="Table 9_TD" height="30">
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="3bbf4be6-5e44-42d5-937b-b76585059b08"/>
+								<box padding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Thanatos_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="bd43ca1a-bcd7-4dcb-88e5-9e37a63b035e"/>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="2300" y="0" width="100" height="30" uuid="e29324c1-cda7-461d-b1a1-bd0261e61db0">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 10_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 10_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 10_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
+					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="10_Efthanasia" uuid="2de91297-4413-49d3-8f1d-08978ec88a13">
+						<datasetParameter name="10_Efthanasia_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="10_Efthanasia_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="10_Efthanasia_microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="10_Efthanasia_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="f1eb0f4f-3ce9-47ce-89bd-c2b405c47094">
+						<jr:detailCell style="Table 10_TD" height="30">
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="d04aca54-a1dc-452b-a5bd-9931f8087626"/>
+								<box padding="2">
+									<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Efthanasia_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="d71bc7fc-d32a-4141-82af-17bb4e001e81"/>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement positionType="Float" x="2400" y="0" width="500" height="30" uuid="e2a347ce-3266-4075-8ae7-19247d82e0e6">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 11_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 11_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 11_TD"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
+					<datasetRun subDataset="8_Yiothesia" uuid="d16bdfb1-5622-49e6-b193-a0d8d1dee378">
+						<datasetParameter name="8_Yiothesia_dimosID_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{dimosID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="8_Yiothesia_fromDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{from_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="8_Yiothesia_microchip_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="8_Yiothesia_toDate_DS_PARAM">
+							<datasetParameterExpression><![CDATA[$P{to_date}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="f0ab8a9f-a4a6-4ff3-9e61-587b61700a11">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell style="Table 11_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="b7a7fd29-d9ed-45b1-9365-f045d47ba597"/>
+								<box padding="2">
+									<leftPen lineWidth="2.0"/>
+								</box>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Yiothesia_date}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="200" uuid="45d84439-5836-49c7-ae44-51e3a1a74e03">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:detailCell style="Table 11_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="200" height="30" uuid="20884df8-47f0-418b-949e-4adc25bbec1a"/>
+								<box padding="2"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SURNAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="b6c04908-1687-499a-9ae6-6b1de4955a27">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:detailCell style="Table 11_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="12b2a0aa-cade-4687-883e-25cca88edcf4"/>
+								<box padding="2"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{FIRSTNAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="11ef3c0e-b8ff-4b58-951d-e3fa8e314dba">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:detailCell style="Table 11_TD" height="30">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<box>
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+								<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="7a78605e-1506-4bdd-af67-7d8691366edb"/>
+								<box padding="2">
+									<rightPen lineWidth="2.0"/>
+								</box>
+								<textElement verticalAlignment="Middle">
+									<font fontName="DejaVu Sans"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{IOTHESIANUM}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:noData height="30">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<staticText>
+							<reportElement positionType="Float" x="0" y="0" width="500" height="30" uuid="634f09b2-858f-4eb6-9528-fe0667951043"/>
+							<box padding="2">
+								<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="DejaVu Sans"/>
+							</textElement>
+							<text><![CDATA[]]></text>
+						</staticText>
+					</jr:noData>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

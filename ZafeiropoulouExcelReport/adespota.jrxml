@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="adespota" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="85ac2efe-9400-4a45-b836-6d8835b91750">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="dimos" class="java.lang.Integer"/>
+	<parameter name="from_date" class="java.util.Date">
+		<defaultValueExpression><![CDATA[DATEFORMAT($P{from_date}, "dd/mm/yyyy" )]]></defaultValueExpression>
+	</parameter>
+	<parameter name="to_date" class="java.util.Date">
+		<defaultValueExpression><![CDATA[DATEFORMAT($P{to_date}, "dd/mm/yyyy" )]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\user\\OneDrive\\Έγγραφα\\ΥπΑΑΤ\\Jasper\\JaspersoftWorkspace\\ZafeiropoulouExcelReport\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT DISTINCT k.MICROCHIP,  kind.DESCR,  gender.DESCR AS `SEX`, DATE_FORMAT(a.DATEOFBIRTH, "%d/%m/%Y") AS `DATEOFBIRTH`
+FROM strayanimals.kinhsh AS k
+INNER JOIN zoaSintrofias.T001_ANIMAL AS a ON CAST(a.MICROCHIPCODE AS BINARY) = CAST(k.MICROCHIP AS BINARY)
+INNER JOIN zoaSintrofias.T011_KIND AS kind ON  kind.ID =  a.T011_ID
+INNER JOIN zoaSintrofias.T008_GENDER AS gender ON gender.ID = a.T008_ID
+WHERE k.dimos_id =  $P{dimos}
+AND k.kataxwrhshdate BETWEEN $P{from_date} AND  $P{to_date}
+ORDER BY kind.ID, gender.ID, k.MICROCHIP]]>
+	</queryString>
+	<field name="MICROCHIP" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="MICROCHIP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="kinhsh"/>
+	</field>
+	<field name="DESCR" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DESCR"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="T011_KIND"/>
+	</field>
+	<field name="SEX" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="SEX"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="T008_GENDER"/>
+	</field>
+	<field name="DATEOFBIRTH" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="DATEOFBIRTH"/>
+	</field>
+	<title>
+		<band height="23">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<staticText>
+				<reportElement positionType="Float" x="300" y="0" width="100" height="23" uuid="9849f409-6411-45ce-a7ca-1c7c2ee6a8b7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="65492eb2-5ada-4b09-98f7-77184552e403"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[DATEOFBIRTH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="200" y="0" width="100" height="23" uuid="5a4663ef-0af4-4adc-a4d1-b4ca916ed204">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="32e24b42-53b3-440b-b0af-2df45128305e"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[SEX]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="100" y="0" width="100" height="23" uuid="b8454a07-e4af-48ee-ae5f-153cc74f7c1f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3fdfecea-60e3-404d-8ef6-f10fa748a1cd"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Είδος]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="100" height="23" uuid="8cf1debf-9b99-4615-9fa8-8f6820c4e0f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="495413a5-c52a-4bdd-bdd6-cd2c32a54ec3"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Microchip]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="0" width="100" height="23" uuid="38e850c2-b9bc-4006-a804-3e6202a19f28">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="495413a5-c52a-4bdd-bdd6-cd2c32a54ec3"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MICROCHIP}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="100" y="0" width="100" height="23" uuid="365fa44e-f87d-448c-840f-b88b24acd1af">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3fdfecea-60e3-404d-8ef6-f10fa748a1cd"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESCR}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="200" y="0" width="100" height="23" uuid="aafde0b3-1b76-46c8-9fe2-8326da3e2c5e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="32e24b42-53b3-440b-b0af-2df45128305e"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SEX}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="300" y="0" width="100" height="23" uuid="c1fda68e-39be-477b-9357-b20adea3c418">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="65492eb2-5ada-4b09-98f7-77184552e403"/>
+				</reportElement>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATEOFBIRTH}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="23">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="23">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="50"/>
+	</detail>
+</jasperReport>

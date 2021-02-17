@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="adespota_perisylogi" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="eac0ef73-9643-418d-b937-26d8978cbbcd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="kinisi_id" class="java.lang.Integer" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="chip" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dimos_id" class="java.lang.Integer" isForPrompting="false">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_dimos_id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fromdate" class="java.util.Date">
+		<defaultValueExpression><![CDATA[DATEFORMAT( $P{fromdate}, "dd/mm/yyyy")]]></defaultValueExpression>
+	</parameter>
+	<parameter name="todate" class="java.util.Date">
+		<defaultValueExpression><![CDATA[DATEFORMAT( $P{todate}, "dd/mm/yyyy")]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select p.PERISYLLOGHDATE, p.PERISYLLOGHAPO
+from strayanimals.kinhsh as k, strayanimals.perisyllogh as p, strayanimals.t013_municipality as m
+where m.ID = p.DIMOS_ID
+and k.dimos_id = $P{p_dimos_id}
+and p.PERISYLLOGHAPO LIKE 'Δήμο'
+and p.KINHSH_ID = k.id
+and p.perisylloghdate between $P{fromdate} and $P{todate}
+and k.drasi_id =1
+and k.microchip = $P{chip}
+union all
+select p2.PERISYLLOGHDATE, p2.PERISYLLOGHAPO
+from strayanimals.kinhsh AS k2, strayanimals.perisyllogh as p2
+where p2.PERISYLLOGHAPO LIKE 'Ιδιωτικό συνεργείο/ Ιδιώτη'
+and k2.dimos_id = $P{p_dimos_id}
+and p2.KINHSH_ID = k2.id
+and p2.perisylloghdate between $P{fromdate} and $P{todate}
+and k2.drasi_id =1
+and k2.microchip = $P{chip}
+union all
+select p3.PERISYLLOGHDATE, p3.PERISYLLOGHAPO
+from strayanimals.kinhsh as k3, strayanimals.perisyllogh as p3, strayanimals.filozwiko_swmateio AS fs3
+where p3.SWMATEIO_ID = fs3.ID
+and p3.PERISYLLOGHAPO LIKE 'Φιλοζωικό Σωματείο'
+and k3.dimos_id = $P{p_dimos_id}
+and  p3.KINHSH_ID = k3.id
+and p3.perisylloghdate between $P{fromdate} and $P{todate}
+and k3.drasi_id =1
+and k3.microchip = $P{chip}]]>
+	</queryString>
+	<field name="PERISYLLOGHDATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="PERISYLLOGHDATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perisyllogh"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PERISYLLOGHAPO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="PERISYLLOGHAPO"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perisyllogh"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="100" height="30" uuid="7f00dead-1bc3-4186-bf33-9e81670643bb"/>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Ημ/νία Περισυλλογής]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="100" y="0" width="100" height="30" uuid="8d6cf516-1125-4399-8fef-1e78e521d610"/>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<text><![CDATA[Περισυλλέκτηκε από]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField textAdjust="StretchHeight" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="0" width="100" height="23" uuid="8a488e10-0036-462a-afc7-adfa976690c4"/>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PERISYLLOGHDATE}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="100" y="0" width="100" height="23" uuid="2e36d558-7dc9-4945-be59-9749bf789509"/>
+				<box padding="2">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PERISYLLOGHAPO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

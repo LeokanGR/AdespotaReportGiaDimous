@@ -1,0 +1,31 @@
+
+From: Panagiotis Loutragotis 
+Sent: Thursday, September 17, 2020 2:20 PM
+To: Λελεκάκης Εμμανουήλ Τμ. Ανάπτ. Πληρ. Συστ. & Ψηφ. Υπηρ., ΥπΑΑΤ <elelekakis@minagric.gr>
+Subject: Αδέσποτα
+
+Μάνο, συνοψίζω :
+1. στο excel υπάρχουν τα query ανα κατηγορία δεδομένων. τα περισσότερα τα έχω ελέγξει, αν κάποιο έχει θέμα να το δουμε
+2. Στέλνω 3 jrxml :
+•	adespota (master)
+•	antilyssikos (subreport)
+•	adespota_perisylogi  (subreport) 
+Mε βάση τα subreports και τα  queries απο το excel θα πρέπει να γίνουν και τα υπόλοιπα subreports.
+
+Υπενθυμίζω ότι οι δράσεις :
+•	Σήμανση - καταγραφή
+•	Αντιλυσσικός
+•	Λεισμανίαση
+•	Στείρωση 
+δεν έχουν αναλυτικούς πίνακες, τα δεδομένα τους τα παίρνουμε από τον πίνακα kinhsh.
+-- 
+Παναγιώτης Λουτραγώτης
+P.M.O.
+COLLECTIVES A.E.
+skype me at: panos.loutragotis
+p:	+302106104415  m: +306937166529
+f:	+302106104416
+a:	Αμαρουσίου - Χαλανδρίου 36β, Μαρούσι, 15125
+ 	36b, Amarousiou-Chalandriou, Marousi, 15125, Greece
+w:	www.collectives.gr  e: ploutragotis@collectives.gr
+

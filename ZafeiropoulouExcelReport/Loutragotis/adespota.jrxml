@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="adespota" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dimos" class="java.lang.Long">
+		<defaultValueExpression><![CDATA[177]]></defaultValueExpression>
+	</parameter>
+	<parameter name="from_date" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="to_date" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\Downloads\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select distinct a.MICROCHIP , read_animal_kind(a.MICROCHIP), read_animal_sex(a.MICROCHIP), read_animal_age(a.MICROCHIP, a.kataxwrhshdate)
+from   kinhsh a
+where a.dimos_id = $P{dimos}
+and    a.kataxwrhshdate between $P{from_date} and  $P{to_date}
+order by 1]]>
+	</queryString>
+	<field name="MICROCHIP" class="java.lang.String">
+		<fieldDescription><![CDATA[MICROCHIP ΖΩΟΥ]]></fieldDescription>
+	</field>
+	<field name="read_animal_kind(a.MICROCHIP)" class="java.lang.String"/>
+	<field name="read_animal_sex(a.MICROCHIP)" class="java.lang.String"/>
+	<field name="read_animal_age(a.MICROCHIP, a.kataxwrhshdate)" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="95" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20"/>
+				<text><![CDATA[MICROCHIP ΖΩΟΥ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20"/>
+				<text><![CDATA[read_animal_kind(a.MICROCHIP)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20"/>
+				<text><![CDATA[read_animal_sex(a.MICROCHIP)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20"/>
+				<text><![CDATA[read_animal_age(a.MICROCHIP, a.kataxwrhshdate)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20"/>
+				<textFieldExpression><![CDATA[$F{MICROCHIP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20"/>
+				<textFieldExpression><![CDATA[$F{read_animal_kind(a.MICROCHIP)}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20"/>
+				<textFieldExpression><![CDATA[$F{read_animal_sex(a.MICROCHIP)}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20"/>
+				<textFieldExpression><![CDATA[$F{read_animal_age(a.MICROCHIP, a.kataxwrhshdate)}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="14">
+			<subreport>
+				<reportElement x="35" y="0" width="200" height="14"/>
+				<subreportParameter name="kinisi_id"/>
+				<subreportParameter name="chip">
+					<subreportParameterExpression><![CDATA[$F{MICROCHIP}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="dimos_id">
+					<subreportParameterExpression><![CDATA[$P{dimos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="p_dimos_id">
+					<subreportParameterExpression><![CDATA[$P{dimos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fromdate">
+					<subreportParameterExpression><![CDATA[$P{from_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="todate">
+					<subreportParameterExpression><![CDATA[$P{to_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "adespota_perisylogi.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="14">
+			<subreport>
+				<reportElement x="35" y="0" width="200" height="14"/>
+				<subreportParameter name="p_dimos_id">
+					<subreportParameterExpression><![CDATA[$P{dimos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="chip">
+					<subreportParameterExpression><![CDATA[$F{MICROCHIP}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="fromdate">
+					<subreportParameterExpression><![CDATA[$P{from_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="todate">
+					<subreportParameterExpression><![CDATA[$P{to_date}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "antilyssikos.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="adespota_perisylogi" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kinisi_id" class="java.lang.Long">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="chip" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dimos_id" class="java.lang.Number">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_dimos_id" class="java.lang.Long">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="fromdate" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="todate" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select perisyllogh.PERISYLLOGHDATE, perisyllogh.PERISYLLOGHAPO,   t013_municipality.DESCR collate utf8_general_ci
+from kinhsh, perisyllogh , t013_municipality
+where t013_municipality.ID = perisyllogh.DIMOS_ID -- collate utf8_general_ci
+and kinhsh.dimos_id = $P{p_dimos_id}
+and PERISYLLOGHAPO = 'Δήμο'
+and KINHSH_ID = kinhsh.id
+and perisylloghdate between $P{fromdate} and $P{todate}
+and drasi_id =1
+and kinhsh.microchip = $P{chip}
+union all
+select perisyllogh.PERISYLLOGHDATE, perisyllogh.PERISYLLOGHAPO, afm
+from kinhsh, perisyllogh
+where PERISYLLOGHAPO = 'Ιδιωτικό συνεργείο/ Ιδιώτη'
+and kinhsh.dimos_id = $P{p_dimos_id}
+and KINHSH_ID = kinhsh.id
+and perisylloghdate between $P{fromdate} and $P{todate}
+and drasi_id =1
+and kinhsh.microchip = $P{chip}
+union all
+select perisyllogh.PERISYLLOGHDATE, perisyllogh.PERISYLLOGHAPO,  filozwiko_swmateio.DESCR
+from kinhsh, perisyllogh , filozwiko_swmateio
+where perisyllogh.SWMATEIO_ID = filozwiko_swmateio.ID
+and PERISYLLOGHAPO = 'Φιλοζωικό Σωματείο'
+and kinhsh.dimos_id = $P{p_dimos_id}
+and KINHSH_ID = kinhsh.id
+and perisylloghdate between $P{fromdate} and $P{todate}
+and drasi_id =1
+and kinhsh.microchip = $P{chip}]]>
+	</queryString>
+	<field name="PERISYLLOGHDATE" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PERISYLLOGHAPO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t013_municipality.DESCR collate utf8_general_ci" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20"/>
+				<text><![CDATA[PERISYLLOGHDATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20"/>
+				<text><![CDATA[PERISYLLOGHAPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20"/>
+				<text><![CDATA[t013_municipality.DESCR collate utf8_general_ci]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="0" width="100" height="20"/>
+				<textFieldExpression><![CDATA[$F{PERISYLLOGHDATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20"/>
+				<textFieldExpression><![CDATA[$F{PERISYLLOGHAPO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20"/>
+				<textFieldExpression><![CDATA[$F{t013_municipality.DESCR collate utf8_general_ci}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
