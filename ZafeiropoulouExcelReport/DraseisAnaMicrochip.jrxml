@@ -226,23 +226,12 @@
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
 		<parameter name="Microchip_Perisilogi_DS" class="java.lang.String"/>
 		<queryString language="SQL">
-			<![CDATA[SELECT DATE_FORMAT(p.PERISYLLOGHDATE, '%d/%m/%Y') as `PerisilogiDate`, p.PERISYLLOGHAPO, fs.`NAME`
-FROM strayanimals.perisyllogh as p
-inner join strayanimals.kinhsh as k on p.KINHSH_ID = k.ID
-left join strayanimals.t013_municipality as m on p.DIMOS_ID = m.ID
-left join strayanimals.filozwiko_swmateio as fs on fs.ID = p.SWMATEIO_ID
-where k.MICROCHIP like $P{Microchip_Perisilogi_DS}]]>
+			<![CDATA[SELECT DATE_FORMAT(a.COLLECTIONDATE, '%d/%m/%Y') as `PerisilogiDate`
+FROM zoaSintrofias.`T001_ANIMAL` as a
+WHERE a.MICROCHIPCODE = $P{Microchip_Perisilogi_DS}]]>
 		</queryString>
 		<field name="PerisilogiDate" class="java.lang.String">
 			<property name="com.jaspersoft.studio.field.label" value="PerisilogiDate"/>
-		</field>
-		<field name="PERISYLLOGHAPO" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="PERISYLLOGHAPO"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="perisyllogh"/>
-		</field>
-		<field name="NAME" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="NAME"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="filozwiko_swmateio"/>
 		</field>
 		<variable name="1_Perisilogi_DS_Var" class="java.lang.Integer" calculation="Sum"/>
 	</subDataset>
@@ -251,10 +240,10 @@ where k.MICROCHIP like $P{Microchip_Perisilogi_DS}]]>
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
 		<parameter name="2_SimansiKatagrafi_microchip_DS_PARAM" class="java.lang.String"/>
 		<queryString language="SQL">
-			<![CDATA[SELECT DATE_FORMAT(k.KATAXWRHSHDATE, '%d/%m/%Y') as `Simansi_date`
-FROM strayanimals.kinhsh as k
-where k.DRASI_ID = 2
-and k.MICROCHIP = $P{2_SimansiKatagrafi_microchip_DS_PARAM}]]>
+			<![CDATA[SELECT DATE_FORMAT(a.CHIPDATE, '%d/%m/%Y') as `Simansi_date`
+FROM zoaSintrofias.T001_ANIMAL as a
+where 
+a.MICROCHIPCODE = $P{2_SimansiKatagrafi_microchip_DS_PARAM}]]>
 		</queryString>
 		<field name="Simansi_date" class="java.lang.String">
 			<property name="com.jaspersoft.studio.field.label" value="Simansi_date"/>
@@ -265,10 +254,9 @@ and k.MICROCHIP = $P{2_SimansiKatagrafi_microchip_DS_PARAM}]]>
 		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ZoaSintrofias_Adapter"/>
 		<parameter name="4_Antilisikos_emvoliasmos_MICROCHIP_DS_PARAM" class="java.lang.String"/>
 		<queryString language="SQL">
-			<![CDATA[SELECT DATE_FORMAT(k.KATAXWRHSHDATE, '%d/%m/%Y') as `Antilisikos_date`
-FROM strayanimals.kinhsh as k
-where k.DRASI_ID = 4
-and k.MICROCHIP = $P{4_Antilisikos_emvoliasmos_MICROCHIP_DS_PARAM}]]>
+			<![CDATA[SELECT DATE_FORMAT(a.ANTILYSSIKODATE, '%d/%m/%Y') as `Antilisikos_date`
+FROM zoaSintrofias.`T001_ANIMAL` AS a
+WHERE MICROCHIPCODE = $P{4_Antilisikos_emvoliasmos_MICROCHIP_DS_PARAM}]]>
 		</queryString>
 		<field name="Antilisikos_date" class="java.lang.String">
 			<property name="com.jaspersoft.studio.field.label" value="Antilisikos_date"/>
@@ -409,36 +397,12 @@ and k.MICROCHIP = $P{7_Fylaksi_microchip_DS_PARAM}]]>
 		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 		<parameter name="9_Epanatopothetisi_microchip_DS_PARAM" class="java.lang.String"/>
 		<queryString>
-			<![CDATA[SELECT DATE_FORMAT(e.RETURNDATE, '%d/%m/%Y') as `Epanatopothetisi_date`, e.APOFASH3MELOUSNUM, DATE_FORMAT(e.APOFASH3MELOUSDATE, '%d/%m/%Y') as Apofasi3melousDate, e.ADA3MELOUS, e.APOFASH5MELOUSNUM, DATE_FORMAT(e.APOFASH5MELOUSDATE, '%d/%m/%Y') as Apofasi5melousDate, e.ADA5MELOUS
-FROM strayanimals.kinhsh as k
-left join strayanimals.epanatopothethsh as e on e.KINHSH_ID = k.ID
-where k.DRASI_ID = 9
-and k.MICROCHIP = $P{9_Epanatopothetisi_microchip_DS_PARAM}]]>
+			<![CDATA[select DATE_FORMAT(a.JOINDATE, '%d/%m/%Y') as `Epanatopothetisi_date`
+from zoaSintrofias.`T001_ANIMAL` AS a
+where a.MICROCHIPCODE = $P{9_Epanatopothetisi_microchip_DS_PARAM}]]>
 		</queryString>
 		<field name="Epanatopothetisi_date" class="java.lang.String">
 			<property name="com.jaspersoft.studio.field.label" value="Epanatopothetisi_date"/>
-		</field>
-		<field name="APOFASH3MELOUSNUM" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="APOFASH3MELOUSNUM"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
-		</field>
-		<field name="Apofasi3melousDate" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="Apofasi3melousDate"/>
-		</field>
-		<field name="ADA3MELOUS" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="ADA3MELOUS"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
-		</field>
-		<field name="APOFASH5MELOUSNUM" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="APOFASH5MELOUSNUM"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
-		</field>
-		<field name="Apofasi5melousDate" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="Apofasi5melousDate"/>
-		</field>
-		<field name="ADA5MELOUS" class="java.lang.String">
-			<property name="com.jaspersoft.studio.field.label" value="ADA5MELOUS"/>
-			<property name="com.jaspersoft.studio.field.tree.path" value="epanatopothethsh"/>
 		</field>
 	</subDataset>
 	<subDataset name="11_Thanatos" uuid="29cfae09-4327-4770-80ac-d9659d0e54db">
@@ -446,11 +410,9 @@ and k.MICROCHIP = $P{9_Epanatopothetisi_microchip_DS_PARAM}]]>
 		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 		<parameter name="11_Thanatos_microchip_DS_PARAM" class="java.lang.String"/>
 		<queryString>
-			<![CDATA[SELECT DATE_FORMAT(th.THANATOSDATE, '%d/%m/%Y') as `Thanatos_date`
-FROM strayanimals.kinhsh as k
-left join strayanimals.thanatos as th on th.KINHSH_ID = k.ID
-where k.DRASI_ID = 11
-and k.MICROCHIP = $P{11_Thanatos_microchip_DS_PARAM}]]>
+			<![CDATA[select DATE_FORMAT(a.DEATHDATE, '%d/%m/%Y') as `Thanatos_date`
+from zoaSintrofias.`T001_ANIMAL` AS a
+where a.MICROCHIPCODE = $P{11_Thanatos_microchip_DS_PARAM}]]>
 		</queryString>
 		<field name="Thanatos_date" class="java.lang.String">
 			<property name="com.jaspersoft.studio.field.label" value="Thanatos_date"/>
@@ -527,18 +489,17 @@ and k.MICROCHIP = $P{8_Yiothesia_microchip_DS_PARAM}]]>
 	</subDataset>
 	<parameter name="MicrochipParam" class="java.lang.String"/>
 	<queryString>
-		<![CDATA[SELECT DISTINCT k.MICROCHIP AS Microchip, kind.DESCR AS KIND, gender.DESCR  AS GENDER, DATE_FORMAT(a.DATEOFBIRTH, '%d/%m/%Y') AS DateOfBirth, dimos.DESCR AS DIMOS
-FROM strayanimals.kinhsh AS k
-INNER JOIN zoaSintrofias.T001_ANIMAL AS a ON a.MICROCHIPCODE = k.MICROCHIP
-INNER JOIN zoaSintrofias.T011_KIND as kind ON kind.ID = a.T011_ID
-INNER JOIN zoaSintrofias.T008_GENDER AS gender ON gender.ID = a.T008_ID
-INNER JOIN strayanimals.t013_municipality as dimos ON dimos.ID = k.DIMOS_ID
+		<![CDATA[SELECT DISTINCT a.MICROCHIPCODE AS Microchip, kind.DESCR AS KIND, gender.DESCR  AS GENDER, DATE_FORMAT(a.DATEOFBIRTH, '%d/%m/%Y') AS DateOfBirth
+FROM zoaSintrofias.T001_ANIMAL AS a
+LEFT JOIN strayanimals.kinhsh AS k ON a.MICROCHIPCODE = k.MICROCHIP
+LEFT JOIN zoaSintrofias.T011_KIND as kind ON kind.ID = a.T011_ID
+LEFT JOIN zoaSintrofias.T008_GENDER AS gender ON gender.ID = a.T008_ID
 WHERE a.MICROCHIPCODE = $P{MicrochipParam}
 ORDER BY 2, 3, 1]]>
 	</queryString>
 	<field name="Microchip" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.label" value="Microchip"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="kinhsh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="T001_ANIMAL"/>
 	</field>
 	<field name="KIND" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.label" value="KIND"/>
@@ -550,10 +511,6 @@ ORDER BY 2, 3, 1]]>
 	</field>
 	<field name="DateOfBirth" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.label" value="DateOfBirth"/>
-	</field>
-	<field name="DIMOS" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.label" value="DIMOS"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="t013_municipality"/>
 	</field>
 	<title>
 		<band height="120">
@@ -1145,9 +1102,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.components.autoresize.proportional" value="true"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="1_Perisilogi_DS" uuid="06d13467-7893-4766-99b9-d553ca6d53d9">
+					<datasetRun subDataset="1_Perisilogi_DS" uuid="b2547168-cebf-40ae-bcaa-746e47ab513d">
 						<datasetParameter name="Microchip_Perisilogi_DS">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
@@ -1196,7 +1153,6 @@ ORDER BY 2, 3, 1]]>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="DejaVu Sans"/>
 								</textElement>
-								<textFieldExpression><![CDATA[IF($F{NAME} == null, $F{PERISYLLOGHAPO}, $F{PERISYLLOGHAPO} + " " + $F{NAME})]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -1233,7 +1189,7 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="2_SimansiKatagrafi_DS" uuid="7add766b-249e-430a-9886-1039889c9c60">
+					<datasetRun subDataset="2_SimansiKatagrafi_DS" uuid="9d17934e-12e2-4a20-a1df-eae24e9b7c7c">
 						<datasetParameter name="2_SimansiKatagrafi_microchip_DS_PARAM">
 							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
@@ -1346,9 +1302,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.table.style.detail" value="Table 4_TD"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="5_Steirosi_DS" uuid="d032fc46-b507-416f-b447-9585222151d7">
+					<datasetRun subDataset="5_Steirosi_DS" uuid="971fff49-8821-4bae-b300-79c6551b705c">
 						<datasetParameter name="5_Steirosi_Microchip_DS_PARAM">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
@@ -1402,9 +1358,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="12_Leismaniasi" uuid="bd8d727a-f4b8-40e9-9e75-aa0512c41385">
+					<datasetRun subDataset="12_Leismaniasi" uuid="ed07014c-7ceb-40e4-9a25-0641ed3498ff">
 						<datasetParameter name="12_Leismaniasi_microchip_DS_PARAM">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
@@ -1459,9 +1415,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="6_Anarrosi" uuid="b1e85a8c-98a7-44a4-b59a-5831f2aae1dc">
+					<datasetRun subDataset="6_Anarrosi" uuid="f87c8657-0f73-461e-a5dd-529357e19434">
 						<datasetParameter name="6_Anarrosi_Microchip_DS_PARAM">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
@@ -1604,9 +1560,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.table.style.detail" value="Table 7_TD"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="7_Fylaksi" uuid="2940286d-8ff0-47a4-85c4-e4602c61e902">
+					<datasetRun subDataset="7_Fylaksi" uuid="3cb361fa-ac58-4728-bc9e-678c4b0ba333">
 						<datasetParameter name="7_Fylaksi_microchip_DS_PARAM">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
@@ -1720,9 +1676,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="9_Epanatopothetisi" uuid="d2ec0e28-8d1d-470a-b4b6-d009c773ea6c">
+					<datasetRun subDataset="9_Epanatopothetisi" uuid="89f75c47-e90c-416a-b4f9-df05376291f6">
 						<datasetParameter name="9_Epanatopothetisi_microchip_DS_PARAM">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
@@ -1830,9 +1786,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.components.autoresize.next" value="true"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="10_Efthanasia" uuid="c532c1ba-167c-4792-b4e6-fd9b38fa6625">
+					<datasetRun subDataset="10_Efthanasia" uuid="38181168-ab53-4f3d-8e58-cebe8e63f734">
 						<datasetParameter name="10_Efthanasia_microchip_DS_PARAM">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
@@ -1886,9 +1842,9 @@ ORDER BY 2, 3, 1]]>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="NoDataCell">
-					<datasetRun subDataset="8_Yiothesia" uuid="6018c936-cefa-4488-b179-ea55e1d362b0">
+					<datasetRun subDataset="8_Yiothesia" uuid="80ba0671-ba29-4825-9848-7bce6a0b4257">
 						<datasetParameter name="8_Yiothesia_microchip_DS_PARAM">
-							<datasetParameterExpression><![CDATA[$F{Microchip}]]></datasetParameterExpression>
+							<datasetParameterExpression><![CDATA[$P{MicrochipParam}]]></datasetParameterExpression>
 						</datasetParameter>
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
